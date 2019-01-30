@@ -1,12 +1,13 @@
-# notemgr
-manage notes from your command line.
+# listmgr
+Manage lists from your command line.
 
 ## TODO
 
-- Create a note
-- list all notes
-- delete a note
+- Create a list
+- List all lists
+- Delete a list
+- Get a single list
 
 ## HOMEWORK
 
-- Change L38 to print the following: "created note called: [NOTE NAME]"
+- Add a 'get' command that return a simple message: "the get function is not yet in use!"

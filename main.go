@@ -17,8 +17,8 @@ func main() {
 			fmt.Println("Please add note name.")
 			os.Exit(1)
 		}
-		list := os.Args[2]
-		createNote(list)
+		note := os.Args[2]
+		createNote(note)
 	case "list":
 		listNotes()
 	case "delete":
@@ -29,17 +29,6 @@ func main() {
 }
 
 func usage() {
-	fmt.Println(`Usage: notemgr [OPTION]...
-manage notes from your command line`)
+	fmt.Printf("Usage: %s [OPTION]...\nManage lists from your command line.\n", os.Args[0])
 	os.Exit(1)
-}
-
-func createNote(name string) {
-	fmt.Println(name)
-}
-func listNotes() {
-	fmt.Println("the list function is not yet in use!")
-}
-func deleteNotes() {
-	fmt.Println("the delete function is not yet in use!")
 }
