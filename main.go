@@ -23,6 +23,8 @@ func main() {
 		listNotes()
 	case "delete":
 		deleteNotes()
+	case "get":
+		getNote()
 	default:
 		usage()
 	}
