@@ -24,7 +24,12 @@ func main() {
 	case "delete":
 		deleteNotes()
 	case "get":
-		getNote()
+		if len(os.Args) < 3 {
+			fmt.Println("Please add note name you wish me to get.")
+			os.Exit(1)
+		}
+		note := os.Args[2]
+		getNote(note)
 	default:
 		usage()
 	}

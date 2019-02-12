@@ -2,6 +2,6 @@ package main
 
 import "fmt"
 
-func getNote() {
-	fmt.Println("the get function is not yet in use!")
+func getNote(name string) {
+	fmt.Println("Here is the list called: ", name)
 }
