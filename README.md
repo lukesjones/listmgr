@@ -10,4 +10,4 @@ Manage lists from your command line.
 
 ## HOMEWORK
 
-- Add a 'get' command that return a simple message: "the get function is not yet in use!"
+- Add tests to create.go, delete.go.

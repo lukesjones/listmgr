@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
-func listNotes() {
-	fmt.Println("the list function is not yet in use!")
+func listNotes() string {
+	return "the list function is not yet in use!"
 }
