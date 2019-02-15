@@ -1,4 +1,4 @@
-# listmgr
+# listmgr [![Build Status](https://travis-ci.org/lukesjones/listmgr.svg?branch=master)](https://travis-ci.org/lukesjones/listmgr)
 Manage lists from your command line.
 
 ## TODO
