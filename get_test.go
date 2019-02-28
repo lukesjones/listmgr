@@ -2,15 +2,15 @@ package main
 
 import "testing"
 
-func TestGetAllNotes(t *testing.T) {
-	expected := "Here are all notes"
+func TestGetAllLists(t *testing.T) {
+	expected := "Here are all lists"
 	output := getList("")
 
 	if output != expected {
 		t.Error("Output is different to expected!")
 	}
 }
-func TestGetSpecificNote(t *testing.T) {
+func TestGetSpecificList(t *testing.T) {
 	list := "test"
 	expected := "Here is the list called: " + list
 

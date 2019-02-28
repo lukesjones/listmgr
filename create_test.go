@@ -3,7 +3,7 @@ package main
 import "testing"
 
 func TestCreateList(t *testing.T) {
-	expected := "You created a note called: test"
+	expected := "You created a list called: test"
 	list := "test"
 
 	output := createList(list)

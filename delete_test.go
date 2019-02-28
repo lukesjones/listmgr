@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func TestDeleteNote(t *testing.T) {
+func TestDeleteList(t *testing.T) {
 	expected := "the delete function is not yet in use!"
 
 	output := deleteList()

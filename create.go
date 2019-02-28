@@ -1,5 +1,5 @@
 package main
 
 func createList(list string) string {
-	return "You created a note called: " + list
+	return "You created a list called: " + list
 }
