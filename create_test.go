@@ -2,11 +2,11 @@ package main
 
 import "testing"
 
-func TestCreateNote(t *testing.T) {
-	expected := "You created a note called: "
-	note := "test"
+func TestCreateList(t *testing.T) {
+	expected := "You created a note called: test"
+	list := "test"
 
-	output := createNote(note)
+	output := createList(list)
 
 	if output != expected {
 		t.Error("Output is different to expected!")

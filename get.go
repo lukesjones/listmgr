@@ -1,5 +1,8 @@
 package main
 
-func getNote(name string) string {
-	return "Here is the list called: " + name
+func getList(list string) string {
+	if list == "" {
+		return "Here are all notes"
+	}
+	return "Here is the list called: " + list
 }

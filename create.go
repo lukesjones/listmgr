@@ -1,5 +1,5 @@
 package main
 
-func createNote(name string) string {
-	return "You created a note called: " + name
+func createList(list string) string {
+	return "You created a note called: " + list
 }

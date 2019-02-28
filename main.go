@@ -9,29 +9,33 @@ func main() {
 	if len(os.Args) < 2 {
 		usage()
 	}
+
+	err := createFile()
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+
 	cmd := os.Args[1]
 	message := ""
 
 	switch cmd {
 	case "create":
 		if len(os.Args) < 3 {
-			fmt.Println("Please add note name.")
+			fmt.Println("Please add list name.")
 			os.Exit(1)
 		}
-		note := os.Args[2]
+		list := os.Args[2]
 
-		message = createNote(note)
-	case "list":
-		message = listNotes()
+		message = createList(list)
 	case "delete":
-		message = deleteNotes()
+		message = deleteList()
 	case "get":
-		if len(os.Args) < 3 {
-			fmt.Println("Please add note name you wish me to get.")
-			os.Exit(1)
+		list := ""
+		if len(os.Args) > 2 {
+			list = os.Args[2]
 		}
-		note := os.Args[2]
-		message = getNote(note)
+		message = getList(list)
 	default:
 		usage()
 	}
@@ -40,6 +44,14 @@ func main() {
 }
 
 func usage() {
-	fmt.Printf("Usage: %s [OPTION]...\nManage lists from your command line.\n", os.Args[0])
+	usage := `Usage: %s [COMMAND]
+Manage lists from your command line.
+
+Available commands:
+  create:  create a new list
+  get:     get a list
+  delete:  delete a specific list
+`
+	fmt.Printf(usage, os.Args[0])
 	os.Exit(1)
 }
